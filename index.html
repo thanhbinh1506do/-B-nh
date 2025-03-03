@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dịch vụ Cho Vay - Ngân Hàng XYZ</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Ngân Hàng XYZ - Dịch Vụ Cho Vay</h1>
+    </header>
+
+    <section class="loan-products">
+        <h2>Sản phẩm cho vay</h2>
+        <div class="product-list">
+            <div class="product">
+                <h3>Vay mua nhà</h3>
+                <p>Lãi suất ưu đãi chỉ từ 7.5%/năm</p>
+                <button onclick="showForm('Vay mua nhà')">Đăng ký ngay</button>
+            </div>
+            <div class="product">
+                <h3>Vay mua xe</h3>
+                <p>Hỗ trợ vay lên đến 80% giá trị xe</p>
+                <button onclick="showForm('Vay mua xe')">Đăng ký ngay</button>
+            </div>
+            <div class="product">
+                <h3>Vay tiêu dùng</h3>
+                <p>Không cần thế chấp, giải ngân nhanh</p>
+                <button onclick="showForm('Vay tiêu dùng')">Đăng ký ngay</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="apply-form" id="apply-form">
+        <h2>Đăng ký vay</h2>
+        <form id="loan-form">
+            <label for="name">Họ và tên:</label>
+            <input type="text" id="name" required>
+
+            <label for="phone">Số điện thoại:</label>
+            <input type="tel" id="phone" required>
+
+            <label for="loan-type">Loại vay:</label>
+            <input type="text" id="loan-type" readonly>
+
+            <button type="submit">Gửi yêu cầu</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
